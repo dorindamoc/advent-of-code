@@ -5,7 +5,7 @@ import kotlin.math.absoluteValue
 
 typealias ScrambledData = Pair<List<Int>, List<Int>>
 
-class Day1: AoCDay<ScrambledData>("src/day1/day1.txt") {
+class Day1: AoCDay<ScrambledData>("src/day1/input.txt") {
 
     override fun  processData(rawData: String): ScrambledData {
         val leftList = mutableListOf<Int>()

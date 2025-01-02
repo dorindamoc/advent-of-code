@@ -18,7 +18,8 @@ class Day2: AoCDay<Day2Data>("src/day2/input.txt") {
                 if (notSafe(diff.absoluteValue)) {
                     safe = false
                     break
-                } else {
+                }
+                else {
                     up.add(diff > 0)
                     if (up.any{it == true} && up.any{it == false}) {
                         safe = false
@@ -26,7 +27,6 @@ class Day2: AoCDay<Day2Data>("src/day2/input.txt") {
                         break
                     }
                 }
-                up = mutableListOf<Boolean>()
             }
             safe
         }
